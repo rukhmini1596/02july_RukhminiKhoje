@@ -17,6 +17,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import pages.HomePage;
 import pages.OnlineShopping;
 import pages.ProductDetailTab;
@@ -31,12 +35,18 @@ public class VarifyUsernameAdressAfterSignInAndCheckItemsOrderedInAYear extends 
 	OnlineShopping onlineShopping;
 	SignInPage signInPage;
 	HomePage homePage;
-	int testId;
-	String exelData;
+	private int testId;
+	static ExtentTest test;
+	static ExtentReports extent;
+	static ExtentHtmlReporter reporter;
+	private String exelData;
 	
 	@Parameters("browser")
 	@BeforeTest
 	public void launchBrowser(String BrowserName) {
+		reporter = new ExtentHtmlReporter("test-output/extentReporter/Extent.html");
+		extent = new ExtentReports();
+		extent.attachReporter(reporter);
 		if(BrowserName.equals("Chrome")) {
 			driver=openChromeBrowser();
 		}
@@ -94,6 +104,7 @@ public class VarifyUsernameAdressAfterSignInAndCheckItemsOrderedInAYear extends 
 		int Expected=5;
 		UtilityClass.captureScreenshot(driver,testId);
 		Assert.assertEquals(ActualOrders, Expected);
+		
 	}
 	
 	@AfterMethod
@@ -103,6 +114,7 @@ public class VarifyUsernameAdressAfterSignInAndCheckItemsOrderedInAYear extends 
 		}
 		onlineShopping.moveToAccountAndLists(driver);
 		homePage.clickOnSignOut();
+		extent.flush();
 	}
 	
 	@AfterClass

@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-RegressionSuit" class="navigator-link ">
-                    <span>C:\Users\Sham\git\02july2022\New folder\02july2022\Maven-Amazon\RegressionSuite.xml</span>
+                    <span>C:\Users\Sham\git\02july2022\New folder\2july_Rukhmini\Maven-Amazon\RegressionSuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -157,42 +157,6 @@
           <div class="suite-RegressionSuit-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testNGClasses.VarifyAddToCartButtonAndOffersForProduct</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="VarifyAddToCartButton">
-                  </a> <!-- VarifyAddToCartButton -->
-                  <span class="method-name">VarifyAddToCartButton</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VarifyAddToCartButton">
-                  </a> <!-- VarifyAddToCartButton -->
-                  <span class="method-name">VarifyAddToCartButton</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VarifyOffersForProducts">
-                  </a> <!-- VarifyOffersForProducts -->
-                  <span class="method-name">VarifyOffersForProducts</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VarifyOffersForProducts">
-                  </a> <!-- VarifyOffersForProducts -->
-                  <span class="method-name">VarifyOffersForProducts</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-RegressionSuit-class-passed -->
-          <div class="suite-RegressionSuit-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">testNGClasses.VarifyUsernameAdressAfterSignInAndCheckItemsOrderedInAYear</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -226,16 +190,55 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-RegressionSuit-class-passed -->
+          <div class="suite-RegressionSuit-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testNGClasses.VarifyAddToCartButtonAndOffersForProduct</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VarifyAddToCartButton">
+                  </a> <!-- VarifyAddToCartButton -->
+                  <span class="method-name">VarifyAddToCartButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VarifyAddToCartButton">
+                  </a> <!-- VarifyAddToCartButton -->
+                  <span class="method-name">VarifyAddToCartButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VarifyOffersForProducts">
+                  </a> <!-- VarifyOffersForProducts -->
+                  <span class="method-name">VarifyOffersForProducts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VarifyOffersForProducts">
+                  </a> <!-- VarifyOffersForProducts -->
+                  <span class="method-name">VarifyOffersForProducts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuit-class-passed -->
         </div> <!-- panel RegressionSuit -->
         <div panel-name="test-xml-RegressionSuit" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Sham\git\02july2022\New folder\02july2022\Maven-Amazon\RegressionSuite.xml</span>
+            <span class="header-content">C:\Users\Sham\git\02july2022\New folder\2july_Rukhmini\Maven-Amazon\RegressionSuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite parallel=&quot;classes&quot; name=&quot;RegressionSuit&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;extentReport.ExtentTestNGIReporterListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;EdgeTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Edge&quot;/&gt;
     &lt;classes&gt;
@@ -308,37 +311,37 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'VarifyOffersForProducts')
+data.setCell(0, 1, 'VarifyAddToCartButton')
 data.setCell(0, 2, 'testNGClasses.VarifyAddToCartButtonAndOffersForProduct')
-data.setCell(0, 3, 28039);
+data.setCell(0, 3, 14849);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'VarifyAddToCartButton')
 data.setCell(1, 2, 'testNGClasses.VarifyAddToCartButtonAndOffersForProduct')
-data.setCell(1, 3, 12195);
+data.setCell(1, 3, 12310);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'VarifyAddToCartButton')
-data.setCell(2, 2, 'testNGClasses.VarifyAddToCartButtonAndOffersForProduct')
-data.setCell(2, 3, 11478);
+data.setCell(2, 1, 'checkItemsOrderedInAYear')
+data.setCell(2, 2, 'testNGClasses.VarifyUsernameAdressAfterSignInAndCheckItemsOrderedInAYear')
+data.setCell(2, 3, 10960);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'VarifyOffersForProducts')
 data.setCell(3, 2, 'testNGClasses.VarifyAddToCartButtonAndOffersForProduct')
-data.setCell(3, 3, 7054);
+data.setCell(3, 3, 10945);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'checkItemsOrderedInAYear')
+data.setCell(4, 1, 'VarifyUsernameAfterLogin')
 data.setCell(4, 2, 'testNGClasses.VarifyUsernameAdressAfterSignInAndCheckItemsOrderedInAYear')
-data.setCell(4, 3, 5996);
+data.setCell(4, 3, 8313);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'checkItemsOrderedInAYear')
-data.setCell(5, 2, 'testNGClasses.VarifyUsernameAdressAfterSignInAndCheckItemsOrderedInAYear')
-data.setCell(5, 3, 5786);
+data.setCell(5, 1, 'VarifyOffersForProducts')
+data.setCell(5, 2, 'testNGClasses.VarifyAddToCartButtonAndOffersForProduct')
+data.setCell(5, 3, 7762);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'VarifyUsernameAfterLogin')
+data.setCell(6, 1, 'checkItemsOrderedInAYear')
 data.setCell(6, 2, 'testNGClasses.VarifyUsernameAdressAfterSignInAndCheckItemsOrderedInAYear')
-data.setCell(6, 3, 3575);
+data.setCell(6, 3, 7190);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'VarifyUsernameAfterLogin')
 data.setCell(7, 2, 'testNGClasses.VarifyUsernameAdressAfterSignInAndCheckItemsOrderedInAYear')
-data.setCell(7, 3, 3237);
+data.setCell(7, 3, 5385);
 window.suiteTableData['RegressionSuit']= { tableData: data, tableDiv: 'times-div-RegressionSuit'}
 return data;
 }
@@ -379,193 +382,211 @@ return data;
               <div class="chronological-class-name">testNGClasses.VarifyUsernameAdressAfterSignInAndCheckItemsOrderedInAYear</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">launchBrowser(Edge)</span>
-                <span class="method-start">2999 ms</span>
+                <span class="method-start">3113 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="configuration-class before">
-                <span class="method-name">createPOMObjects</span>
-                <span class="method-start">5532 ms</span>
-              </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGClasses.VarifyAddToCartButtonAndOffersForProduct</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">createPOMObjects</span>
-                <span class="method-start">5532 ms</span>
+                <span class="method-start">5679 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClasses.VarifyUsernameAdressAfterSignInAndCheckItemsOrderedInAYear</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createPOMObjects</span>
+                <span class="method-start">5679 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">5714 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClasses.VarifyAddToCartButtonAndOffersForProduct</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
                 <span class="method-name">selectProductYouWantToAdd</span>
-                <span class="method-start">5567 ms</span>
+                <span class="method-start">5714 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGClasses.VarifyUsernameAdressAfterSignInAndCheckItemsOrderedInAYear</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">login</span>
-                <span class="method-start">5567 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkItemsOrderedInAYear</span>
-                <span class="method-start">12920 ms</span>
+                <span class="method-start">16897 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logOut([TestResult name=checkItemsOrderedInAYear status=SUCCESS method=VarifyUsernameAdressAfterSignInAndCh...)</span>
-                <span class="method-start">18921 ms</span>
+                <span class="method-start">27860 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">29552 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGClasses.VarifyAddToCartButtonAndOffersForProduct</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">VarifyAddToCartButton</span>
-                <span class="method-start">19808 ms</span>
+                <span class="method-start">29893 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGClasses.VarifyUsernameAdressAfterSignInAndCheckItemsOrderedInAYear</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">login</span>
-                <span class="method-start">20265 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VarifyUsernameAfterLogin</span>
-                <span class="method-start">25038 ms</span>
+                <span class="method-start">37256 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logOut([TestResult name=VarifyUsernameAfterLogin status=SUCCESS method=VarifyUsernameAdressAfterSignInAndCh...)</span>
-                <span class="method-start">28618 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">nullobjectReferences</span>
-                <span class="method-start">29994 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGClasses.VarifyAddToCartButtonAndOffersForProduct</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">closeTheTabAndLogOut([TestResult name=VarifyAddToCartButton status=SUCCESS method=VarifyAddToCartButtonAndOffersForProduc...)</span>
-                <span class="method-start">31288 ms</span>
+                <span class="method-start">44743 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClasses.VarifyUsernameAdressAfterSignInAndCheckItemsOrderedInAYear</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut([TestResult name=VarifyUsernameAfterLogin status=SUCCESS method=VarifyUsernameAdressAfterSignInAndCh...)</span>
+                <span class="method-start">45570 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">nullobjectReferences</span>
+                <span class="method-start">47582 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClasses.VarifyAddToCartButtonAndOffersForProduct</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">selectProductYouWantToAdd</span>
-                <span class="method-start">37172 ms</span>
+                <span class="method-start">50368 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VarifyOffersForProducts</span>
-                <span class="method-start">48345 ms</span>
+                <span class="method-start">64896 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeTheTabAndLogOut([TestResult name=VarifyOffersForProducts status=SUCCESS method=VarifyAddToCartButtonAndOffersForProd...)</span>
-                <span class="method-start">55400 ms</span>
+                <span class="method-start">75841 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeTheBrowser</span>
-                <span class="method-start">61016 ms</span>
+                <span class="method-start">81580 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGClasses.VarifyUsernameAdressAfterSignInAndCheckItemsOrderedInAYear</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeTheBrowser</span>
-                <span class="method-start">61170 ms</span>
+                <span class="method-start">81825 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGClasses.VarifyAddToCartButtonAndOffersForProduct</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">launchBrowser(Chrome)</span>
-                <span class="method-start">61392 ms</span>
+                <span class="method-start">82074 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGClasses.VarifyUsernameAdressAfterSignInAndCheckItemsOrderedInAYear</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">launchBrowser(Chrome)</span>
-                <span class="method-start">62302 ms</span>
+                <span class="method-start">84113 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">createPOMObjects</span>
-                <span class="method-start">63126 ms</span>
+                <span class="method-start">84855 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGClasses.VarifyAddToCartButtonAndOffersForProduct</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">createPOMObjects</span>
-                <span class="method-start">63126 ms</span>
+                <span class="method-start">84855 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">selectProductYouWantToAdd</span>
-                <span class="method-start">63129 ms</span>
-              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGClasses.VarifyUsernameAdressAfterSignInAndCheckItemsOrderedInAYear</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">63129 ms</span>
+                <span class="method-start">84858 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClasses.VarifyAddToCartButtonAndOffersForProduct</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">selectProductYouWantToAdd</span>
+                <span class="method-start">84858 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClasses.VarifyUsernameAdressAfterSignInAndCheckItemsOrderedInAYear</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">checkItemsOrderedInAYear</span>
-                <span class="method-start">69494 ms</span>
+                <span class="method-start">97133 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logOut([TestResult name=checkItemsOrderedInAYear status=SUCCESS method=VarifyUsernameAdressAfterSignInAndCh...)</span>
-                <span class="method-start">75281 ms</span>
+                <span class="method-start">104324 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">76671 ms</span>
+                <span class="method-start">105958 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGClasses.VarifyAddToCartButtonAndOffersForProduct</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">VarifyAddToCartButton</span>
-                <span class="method-start">76749 ms</span>
+                <span class="method-start">110526 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGClasses.VarifyUsernameAdressAfterSignInAndCheckItemsOrderedInAYear</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">VarifyUsernameAfterLogin</span>
-                <span class="method-start">82347 ms</span>
+                <span class="method-start">111981 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logOut([TestResult name=VarifyUsernameAfterLogin status=SUCCESS method=VarifyUsernameAdressAfterSignInAndCh...)</span>
-                <span class="method-start">85585 ms</span>
+                <span class="method-start">117366 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">nullobjectReferences</span>
-                <span class="method-start">87375 ms</span>
+                <span class="method-start">119535 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGClasses.VarifyAddToCartButtonAndOffersForProduct</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">closeTheTabAndLogOut([TestResult name=VarifyAddToCartButton status=SUCCESS method=VarifyAddToCartButtonAndOffersForProduc...)</span>
-                <span class="method-start">88946 ms</span>
+                <span class="method-start">122837 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">selectProductYouWantToAdd</span>
-                <span class="method-start">94693 ms</span>
+                <span class="method-start">128604 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VarifyOffersForProducts</span>
-                <span class="method-start">105552 ms</span>
+                <span class="method-start">142729 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeTheTabAndLogOut([TestResult name=VarifyOffersForProducts status=SUCCESS method=VarifyAddToCartButtonAndOffersForProd...)</span>
-                <span class="method-start">133592 ms</span>
+                <span class="method-start">150492 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeTheBrowser</span>
-                <span class="method-start">140305 ms</span>
+                <span class="method-start">156222 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGClasses.VarifyUsernameAdressAfterSignInAndCheckItemsOrderedInAYear</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeTheBrowser</span>
-                <span class="method-start">144449 ms</span>
+                <span class="method-start">160370 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

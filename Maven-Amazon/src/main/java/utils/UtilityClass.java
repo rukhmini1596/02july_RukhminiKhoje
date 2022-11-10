@@ -23,12 +23,12 @@ public class UtilityClass {
 		Date dateRef = new Date();
 		SimpleDateFormat sdf= new SimpleDateFormat("DDD-MM-YYYY hh mm ss");
 		sdf.format(dateRef);
-		File drc=new File("C:\\Users\\Sham\\Desktop\\SeleniumScreenshot\\Test-"+TestID+sdf.format(dateRef)+".png");
+		File drc=new File("test-output/testScreenshots\\Test-"+TestID+sdf.format(dateRef)+".png");
 		FileHandler.copy(capturescreen, drc);
 	}
 	
 	public static String getDataFromExelSheet(String sheet, int row, int column) throws EncryptedDocumentException, IOException {
-		FileInputStream file = new FileInputStream("D:\\Velocity\\Automation\\AutomationTestData.xlsx");
+		FileInputStream file = new FileInputStream("src//test/resources//testData//AutomationTestData.xlsx");
 		Cell expectedCell=WorkbookFactory.create(file).getSheet(sheet).getRow(row).getCell(column);
 		
 		String cellValue="";

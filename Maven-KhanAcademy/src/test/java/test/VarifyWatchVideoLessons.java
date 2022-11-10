@@ -13,6 +13,8 @@ import org.openqa.selenium.support.ui.Select;
 public class VarifyWatchVideoLessons {
 	
 	public static void main(String[] args) throws InterruptedException {
+		System.out.println("comments added");
+		//this is my comments
 		int count=0;
 		System.setProperty("webdriver.chrome.driver", "D:\\Selenium material\\chromedriver_win32\\chrome92 version\\chromedriver.exe");		
 		WebDriver driver= new ChromeDriver();
